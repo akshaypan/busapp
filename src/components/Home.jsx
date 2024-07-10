@@ -4,12 +4,8 @@ const Home = () => {
   return (
     
     <div>
-
       
-      <div className="container">
-      
-
-        {/*secondrow*/}
+       <div className="container">
         <div className="row">
           <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div id="carouselExample" class="carousel slide">
@@ -35,8 +31,31 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <div className="row">
+          <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+          <div class="card">
+              <img src="https://etimg.etb2bimg.com/photo/63331381.cms" class="card-img-top" alt="..."/>
+              <div class="card-body">
+                <h5 class="card-title">Tata buses</h5>
+                <a href="#" class="btn btn-primary">Buy now</a>
+              </div>
+            </div>
+          
+          </div>
+          <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+          <div class="card">
+              <img src="https://content.jdmagicbox.com/rep/b2b/diesel-driver-only-bus/diesel-driver-only-bus-px9rZCGg.jpg?impolicy=queryparam&im=Resize=(360,360),aspect=fit" class="card-img-top" alt="..."/>
+              <div class="card-body">
+                <h5 class="card-title">Bajaj buses</h5>
+                <a href="#" class="btn btn-primary">Buy now</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
-      <br />
       
 
           
