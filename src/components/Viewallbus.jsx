@@ -15,6 +15,15 @@ const Viewallbus = () => {
       {"Model":"Volvo GTR 900","Brand":"Volvo","price":300000,"image":"https://imgs.search.brave.com/7n1YO7qkyw0R19gC5WncBbgFt_uMFW3dV4huAdYllL0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXNp/bmVzcy1zd2VkZW4u/aW1hZ2V2YXVsdC5t/ZWRpYS9wdWJsaXNo/ZWRtZWRpYS8wbWpx/cm5tbGlmOXA3bTJm/bjR0Yy9Wb2x2b19C/dXNlc19jYXNlXzEu/anBn"}
     ]
   )
+  var[data1,changeData]=useState(
+    [
+      {"SI":1,"Model":"Eka mobility eka-9 hydrogen","Brand":"Eka","Price":1500000},
+      {"SI":2,"Model":"volvo 9600","Brand":"volvo","Price":500000},
+      {"SI":3,"Model":"Olctra X2","Brand":"Olectra","Price":2500000},
+      {"SI":3,"Model":"Olctra X2","Brand":"Olectra","Price":2500000},
+      {"SI":3,"Model":"Olctra X2","Brand":"Olectra","Price":2500000}
+    ]
+  )
   return (
     <div>
         <NavigationBar/>
@@ -42,6 +51,35 @@ const Viewallbus = () => {
             )}
             
             
+          <div className="row g-3">
+                <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">SI No.</th>
+      <th scope="col">Book name</th>
+      <th scope="col">Book author</th>
+      <th scope="col">Book price</th>
+    </tr>
+  </thead>
+  <tbody>
+   {data1.map(
+    (value,index)=>{
+      return<tr>
+      <th scope="row">{value.SI}</th>
+      <td>{value.Model}</td>
+      <td>{value.Brand}</td>
+      <td>Rs.{value.Price}</td>
+    </tr>
+    }
+   )}
+  </tbody>
+</table>
+
+                </div>
+            </div>
+           
             
             
 
